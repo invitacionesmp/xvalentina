@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Valentina · Mis XV años</title>
+  <meta name="description" content="Estás invitado a los XV años de Valentina. Sábado 28 de noviembre, 21:00 hs, Salón Los Mellis.">
+  <meta name="theme-color" content="#080b22">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, etc.). Las direcciones deben ser completas. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="XV Valentina">
+  <meta property="og:description" content="Tienes una invitación muy especial XV">
+  <meta property="og:url" content="https://invitacionesmp.github.io/xvalentina/">
+  <meta property="og:image" content="https://invitacionesmp.github.io/xvalentina/assets/img/miniatura.jpg">
+  <meta property="og:image:width" content="630">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="assets/img/rosa-icono.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bloqueado">
+
+<!-- Íconos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6a1 1 0 0 0 1.5.86l11-6.8a1 1 0 0 0 0-1.72l-11-6.8A1 1 0 0 0 8 5.2z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4.2" height="14" rx="1.2"/><rect x="13.8" y="5" width="4.2" height="14" rx="1.2"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><rect x="5" y="5" width="2.6" height="14" rx="1"/><path d="M19 6.2v11.6a.9.9 0 0 1-1.4.74l-8.4-5.8a.9.9 0 0 1 0-1.48l8.4-5.8A.9.9 0 0 1 19 6.2z"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><rect x="16.4" y="5" width="2.6" height="14" rx="1"/><path d="M5 6.2v11.6a.9.9 0 0 0 1.4.74l8.4-5.8a.9.9 0 0 0 0-1.48L6.4 5.46A.9.9 0 0 0 5 6.2z"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M16 4h4v4M20 4l-6.5 6.5M4 20l16-16M16 20h4v-4M20 20l-5-5M4 4l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 2l3.5 3.5L17 9M3.5 11V9.5A4 4 0 0 1 7.5 5.5h13M7 22l-3.5-3.5L7 15M20.5 13v1.5a4 4 0 0 1-4 4h-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-vol" viewBox="0 0 24 24"><path d="M4 9.5v5h3.6l4.9 4V5.5l-4.9 4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.6 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5v5h3.6l4.9 4V5.5l-4.9 4H4z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2.5a6.8 6.8 0 0 0-6.8 6.8c0 5.1 6.8 12.2 6.8 12.2s6.8-7.1 6.8-12.2A6.8 6.8 0 0 0 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.3" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="3.5" y="9" width="17" height="4" rx="1"/><path d="M5 13v7.5h14V13M12 9v11.5M12 9C9.5 9 7.5 8 7.5 6.2S9 3.5 10.2 4.3C11.4 5 12 7 12 9zm0 0c2.5 0 4.5-1 4.5-2.8S15 3.5 13.8 4.3C12.6 5 12 7 12 9z"/></g></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></g></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.18-3 .87.9-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8zM8.7 7.3c-.2 0-.5.07-.75.35-.25.27-.97.95-.97 2.3s1 2.7 1.13 2.88c.14.18 1.95 3.1 4.8 4.2 2.37.93 2.85.75 3.37.7.52-.05 1.66-.68 1.9-1.33.23-.65.23-1.2.16-1.33-.07-.12-.25-.2-.53-.33-.28-.14-1.66-.82-1.9-.91-.26-.1-.45-.14-.63.14-.19.27-.72.9-.88 1.1-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.38-.83-.74-1.4-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.12.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.13-.63-1.52-.87-2.08-.22-.54-.46-.47-.63-.48z"/></symbol>
+    <!-- rosa pequeña para sellos y adornos -->
+    <symbol id="i-rosa" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c-8 0-15 5-15 13 0 7 4 12 9 14 2 1 4 1 6 1s4 0 6-1c5-2 9-7 9-14 0-8-7-13-15-13z"/><path d="M24 27c-4 0-7-2-7-6 0-3 3-5 6-5s5 2 5 4-2 3-3 3-2-1-2-2"/><path d="M14 17c2-4 6-6 10-6M34 17c-1-3-3-5-6-6M16 29c3 2 5 3 8 3s5-1 8-3"/><path d="M24 34v10M24 41c-3-3-7-3-9-1 3 3 7 3 9 1zm0-2c3-3 7-3 9-1-3 3-7 3-9 1z"/></g></symbol>
+    <!-- adorno divisor -->
+    <symbol id="i-adorno" viewBox="0 0 240 24"><g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M4 12h84c8 0 10-7 16-7 5 0 6 4 4 6M236 12h-84c-8 0-10-7-16-7-5 0-6 4-4 6"/><path d="M120 4l5 8-5 8-5-8z" fill="currentColor"/></g></symbol>
+    <!-- adorno lateral: línea que termina en un rizo (se espeja para el otro lado) -->
+    <symbol id="i-adorno-lado" viewBox="0 0 120 20"><g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"><path d="M2 10h76c9 0 12-7 19-7 6 0 8 6 4 8-3 2-7-1-5-4"/><path d="M96 14c4 3 9 3 12 0" opacity=".7"/></g></symbol>
+    <!-- vestuario -->
+    <symbol id="i-traje" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M5 20l9-6 5 7 5-7 9 6-2 34H7z"/><path d="M14 14l5 17 5-17"/><path d="M16.5 19.5l2.5 1.7 2.5-1.7v4.2l-2.5-1.7-2.5 1.7z"/><circle cx="19" cy="40" r=".9" fill="currentColor"/><circle cx="19" cy="46" r=".9" fill="currentColor"/><path d="M43 8l2 14M53 8l-2 14M45 22h6l-1 10h-4z"/><path d="M46 32c-6 10-10 18-12 22h28c-2-4-6-12-12-22"/><path d="M40 44c4 2 14 2 18 0"/></g></symbol>
+  </defs>
+</svg>
+
+<!-- Fondo vivo: pétalos y destellos -->
+<canvas id="petalos" aria-hidden="true"></canvas>
+
+<!-- ========== SOBRE DE ENTRADA ========== -->
+<section id="sobre" class="sobre" aria-label="Invitación cerrada">
+  <div class="sobre__cielo" aria-hidden="true"></div>
+  <div class="sobre__escena">
+    <header class="sobre__titulo">
+      <p class="sobre__pre script">
+        <svg class="flor-lado" aria-hidden="true"><use href="#i-adorno-lado"/></svg>
+        <span>Mis quince años</span>
+        <svg class="flor-lado flor-lado--espejo" aria-hidden="true"><use href="#i-adorno-lado"/></svg>
+      </p>
+      <h1 class="sobre__nombre oro-texto script">Valentina</h1>
+      <div class="divisor" aria-hidden="true">
+        <svg class="divisor__lado"><use href="#i-adorno-lado"/></svg>
+        <svg class="divisor__rosa"><use href="#i-rosa"/></svg>
+        <svg class="divisor__lado divisor__lado--espejo"><use href="#i-adorno-lado"/></svg>
+      </div>
+    </header>
+
+    <button class="sobre__boton" id="abrir" type="button" aria-label="Abrir la invitación de Valentina">
+      <span class="caja" aria-hidden="true">
+        <span class="caja__giro">
+          <img class="capa capa--fondo" src="assets/img/sobre-fondo.webp" alt="" width="1210" height="734" draggable="false">
+          <span class="carta">
+            <span class="carta__marco">
+              <svg class="carta__rosa" aria-hidden="true"><use href="#i-rosa"/></svg>
+              <span class="carta__texto script">Estás invitado</span>
+              <svg class="carta__adorno" aria-hidden="true"><use href="#i-adorno"/></svg>
+            </span>
+          </span>
+          <img class="capa capa--frente" src="assets/img/sobre-frente.webp" alt="" width="1210" height="734" draggable="false">
+          <span class="tapa">
+            <img class="tapa__cara tapa__cara--fuera" src="assets/img/sobre-tapa.webp" alt="" draggable="false">
+            <img class="tapa__cara tapa__cara--dentro" src="assets/img/sobre-tapa-interior.webp" alt="" draggable="false">
+          </span>
+          <img class="sello" id="sello" src="assets/img/sello-lacre.webp" alt="" width="360" height="360" draggable="false">
+        </span>
+      </span>
+    </button>
+
+    <p class="sobre__pista script">Tocá el sobre para abrirlo</p>
+    <div class="divisor divisor--chico" aria-hidden="true">
+      <svg class="divisor__lado"><use href="#i-adorno-lado"/></svg>
+      <svg class="divisor__rosa"><use href="#i-rosa"/></svg>
+      <svg class="divisor__lado divisor__lado--espejo"><use href="#i-adorno-lado"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INVITACIÓN ========== -->
+<main id="invitacion" class="invitacion" aria-hidden="true">
+
+  <!-- Portada -->
+  <header class="portada">
+    <div class="cupula" id="cupula">
+      <img id="rosa-img" src="assets/img/rosa-cupula.webp" alt="Una rosa roja encantada bajo una cúpula de cristal" width="526" height="979" data-flor="51.3,32.8" loading="eager" decoding="async">
+    </div>
+    <p class="portada__pre script">Mis quince años</p>
+    <div class="nombre-wrap"><h2 class="portada__nombre oro-texto script">Valentina</h2></div>
+    <p class="portada__tema">Prepárate para una noche inolvidable</p>
+
+    <!-- Reproductor -->
+    <section class="reproductor" id="reproductor" aria-label="Reproductor de música">
+      <p class="reproductor__estado" id="r-estado">Presioná play para escuchar la canción</p>
+      <div class="reproductor__pista">
+        <span class="reproductor__titulo" id="r-titulo">Vals del salón</span>
+        <span class="reproductor__artista" id="r-artista">Valentina XV</span>
+      </div>
+
+      <div class="reproductor__barra">
+        <span class="reproductor__tiempo" id="r-actual">0:00</span>
+        <input type="range" id="r-progreso" class="rango" min="0" max="1000" value="0" step="1" aria-label="Posición de la canción">
+        <span class="reproductor__tiempo" id="r-total">0:00</span>
+      </div>
+
+      <div class="reproductor__controles">
+        <button class="ctl ctl--chico" id="r-mezclar" type="button" aria-label="Orden aleatorio" aria-pressed="false" title="Aleatorio"><svg><use href="#i-shuffle"/></svg></button>
+        <button class="ctl" id="r-anterior" type="button" aria-label="Canción anterior" title="Anterior"><svg><use href="#i-prev"/></svg></button>
+        <button class="ctl ctl--play" id="r-play" type="button" aria-label="Reproducir" title="Reproducir / pausar"><svg class="ico-play"><use href="#i-play"/></svg><svg class="ico-pausa"><use href="#i-pause"/></svg></button>
+        <button class="ctl" id="r-siguiente" type="button" aria-label="Canción siguiente" title="Siguiente"><svg><use href="#i-next"/></svg></button>
+        <button class="ctl ctl--chico" id="r-repetir" type="button" aria-label="Repetir: desactivado" data-modo="off" title="Repetir"><svg><use href="#i-repeat"/></svg><b class="uno">1</b></button>
+      </div>
+
+      <div class="reproductor__volumen">
+        <button class="ctl ctl--chico" id="r-silencio" type="button" aria-label="Silenciar" title="Silenciar"><svg class="ico-vol"><use href="#i-vol"/></svg><svg class="ico-mute"><use href="#i-mute"/></svg></button>
+        <input type="range" id="r-volumen" class="rango rango--vol" min="0" max="100" value="70" aria-label="Volumen">
+      </div>
+    </section>
+  </header>
+
+  <!-- Frase -->
+  <section class="frase">
+    <svg class="adorno" aria-hidden="true"><use href="#i-adorno"/></svg>
+    <p class="frase__texto script-suave" id="frase-1"></p>
+    <p class="frase__texto script-suave" id="frase-2"></p>
+    <p class="frase__texto script-suave frase__cierre" id="frase-3"></p>
+    <svg class="adorno adorno--giro" aria-hidden="true"><use href="#i-adorno"/></svg>
+  </section>
+
+  <!-- XV y fecha -->
+  <section class="fecha" aria-label="Fecha del evento">
+    <div class="xv" aria-hidden="true">
+      <span class="xv__mis script">Mis</span>
+      <span class="xv__num oro-texto">XV</span>
+      <span class="xv__anios script">años</span>
+    </div>
+    <div class="fecha__linea">
+      <span class="fecha__lado" id="f-semana">Sábado</span>
+      <span class="fecha__dia oro-texto" id="f-dia">28</span>
+      <span class="fecha__lado" id="f-mes">Noviembre</span>
+    </div>
+    <p class="fecha__anio" id="f-anio">2026</p>
+  </section>
+
+  <!-- Cuenta regresiva -->
+  <section class="cuenta" aria-label="Cuenta regresiva">
+    <p class="cuenta__titulo script">Faltan</p>
+    <div class="cuenta__grilla" role="timer" aria-live="off">
+      <div class="cuenta__bloque"><span class="cuenta__num" id="c-dias">0</span><span class="cuenta__etq">días</span></div>
+      <span class="cuenta__sep" aria-hidden="true">:</span>
+      <div class="cuenta__bloque"><span class="cuenta__num" id="c-horas">00</span><span class="cuenta__etq">horas</span></div>
+      <span class="cuenta__sep" aria-hidden="true">:</span>
+      <div class="cuenta__bloque"><span class="cuenta__num" id="c-min">00</span><span class="cuenta__etq">minutos</span></div>
+      <span class="cuenta__sep" aria-hidden="true">:</span>
+      <div class="cuenta__bloque"><span class="cuenta__num cuenta__num--seg" id="c-seg">00</span><span class="cuenta__etq">segundos</span></div>
+    </div>
+    <p class="cuenta__mensaje script" id="c-mensaje" hidden></p>
+  </section>
+
+  <!-- Lugar y hora -->
+  <section class="detalles">
+    <article class="ventana ventana--grande">
+      <svg class="ventana__ico" aria-hidden="true"><use href="#i-pin"/></svg>
+      <h3 class="ventana__titulo" id="l-lugar">Salón Los Mellis</h3>
+      <p class="ventana__sub" id="l-ciudad">Corrientes</p>
+      <p class="ventana__hora"><span id="l-hora">21:00 hs</span></p>
+      <div class="botonera">
+        <a class="boton" id="l-mapa" href="#" target="_blank" rel="noopener noreferrer"><svg><use href="#i-pin"/></svg>Ver ubicación</a>
+        <button class="boton boton--suave" id="l-calendario" type="button"><svg><use href="#i-cal"/></svg>Agregar al calendario</button>
+      </div>
+    </article>
+
+    <div class="ventanas-par">
+      <article class="ventana">
+        <svg class="ventana__ico ventana__ico--traje" aria-hidden="true"><use href="#i-traje"/></svg>
+        <h3 class="ventana__titulo">Dress code</h3>
+        <p class="ventana__destacado" id="d-code">Elegante</p>
+      </article>
+
+      <article class="ventana">
+        <div class="muestras" id="muestras" role="list"></div>
+        <h3 class="ventana__titulo">Colores reservados</h3>
+        <p class="ventana__sub">para la quinceañera</p>
+      </article>
+    </div>
+
+    <article class="ventana ventana--regalo">
+      <svg class="ventana__ico" aria-hidden="true"><use href="#i-gift"/></svg>
+      <h3 class="ventana__titulo">Regalo</h3>
+      <p class="ventana__sub ventana__sub--texto">Si querés hacerme un obsequio, podés hacerlo mediante este alias</p>
+      <button class="alias" id="alias-btn" type="button" aria-label="Copiar alias">
+        <span id="alias-texto">valenttina.mp12</span>
+        <svg><use href="#i-copy"/></svg>
+      </button>
+    </article>
+  </section>
+
+  <!-- Confirmación -->
+  <section class="confirmar">
+    <svg class="adorno" aria-hidden="true"><use href="#i-adorno"/></svg>
+    <h3 class="confirmar__titulo script">¿Me acompañás?</h3>
+    <label class="campo">
+      <span class="campo__etq">Tu nombre</span>
+      <input class="campo__input" id="c-nombre" type="text" autocomplete="name" placeholder="Nombre y apellido" maxlength="60">
+    </label>
+    <a class="boton boton--wa" id="c-wa" href="#" target="_blank" rel="noopener noreferrer"><svg><use href="#i-wa"/></svg>Confirmar asistencia</a>
+    <p class="confirmar__plazo script-suave" id="c-plazo">Tenés tiempo hasta el 25 de noviembre para confirmar</p>
+  </section>
+
+  <footer class="pie">
+    <svg class="pie__rosa" aria-hidden="true"><use href="#i-rosa"/></svg>
+    <p class="script oro-texto pie__firma">Valentina</p>
+    <p class="pie__nota">Te espero para bailar juntos esta noche de cuento.</p>
+  </footer>
+</main>
+
+<!-- Botón flotante de música (siempre a mano) -->
+<button class="flotante" id="flotante" type="button" aria-label="Reproducir música" hidden>
+  <svg class="ico-play"><use href="#i-play"/></svg>
+  <svg class="ico-pausa"><use href="#i-pause"/></svg>
+</button>
+
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<!-- Pétalo que se desprende de la rosa y cae por toda la página -->
+<div class="petalo-guia" id="petalo-guia" aria-hidden="true" hidden>
+  <div class="petalo-guia__giro">
+    <svg viewBox="0 0 44 58" width="44" height="58">
+      <defs>
+        <linearGradient id="pg-cuerpo" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#6d0824"/><stop offset=".55" stop-color="#c8153f"/><stop offset="1" stop-color="#f23a66"/>
+        </linearGradient>
+        <radialGradient id="pg-luz" cx=".35" cy=".25" r=".7">
+          <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <path d="M22 56C10 50 2 38 4 24 6 10 15 2 22 3c8 1 17 8 18 22 1 14-7 26-18 31z" fill="url(#pg-cuerpo)" stroke="#5a0820" stroke-width="1"/>
+      <path d="M22 56C20 42 21 28 22 12M22 50C14 42 10 32 10 22M22 50c8-8 11-18 10-28" fill="none" stroke="#5a0820" stroke-opacity=".35" stroke-width="1" stroke-linecap="round"/>
+      <path d="M22 56C10 50 2 38 4 24 6 10 15 2 22 3c8 1 17 8 18 22 1 14-7 26-18 31z" fill="url(#pg-luz)"/>
+    </svg>
+  </div>
+</div>
+
+<audio id="audio" preload="auto"></audio>
+
+<canvas id="magia" aria-hidden="true"></canvas>
+
+<script src="js/config.js"></script>
+<script src="js/magia.js"></script>
+<script src="js/petalos.js"></script>
+<script src="js/petalo-guia.js"></script>
+<script src="js/reproductor.js"></script>
+<script src="js/cuenta.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

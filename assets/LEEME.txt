@@ -1,0 +1,3 @@
+audio/  -> música en MP3 (listada en js/config.js)
+fonts/  -> tipografías: Pinyon Script, Cinzel y Cormorant Garamond (licencia OFL)
+img/    -> rosa-cupula (portada), piezas del sobre y sello (recortados de la imagen original) y favicon
